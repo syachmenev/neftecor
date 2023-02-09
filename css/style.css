@@ -1,0 +1,165 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  /* display: block; */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.header-top {
+  background: linear-gradient(
+    180deg,
+    #000000 10.42%,
+    rgba(0, 0, 0, 0.09375) 79.69%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 259px;
+}
+
+.navigation {
+  display: flex;
+  padding-top: 22px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 34px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed #4f4f4f;
+  border-bottom: 1px dashed #4f4f4f;
+  width: 100%;
+}
+
+.menu-list__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.link-privat::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/privat.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.menu-user__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #b6b6b6;
+}
+
+.link-time::before {
+  content: "";
+  width: 21px;
+  height: 22px;
+  background-image: url(../images/time.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link-mail::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/mail.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link-phone::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  background-image: url(../images/phone.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scheme {
+  position: relative;
+  background-image: url(../images/Group\ 25.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 1143px;
+  height: 864px;
+}
+
+.scheme::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  filter: drop-shadow(0px 0px 50px #ffffff);
+}
