@@ -61,7 +61,7 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  height: 100v;
 }
 
 .header-top {
@@ -199,8 +199,8 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 1144px;
-  padding: 63px 69px 63px 69px;
-  margin: 130px auto 0;
+  padding: 0 69px 63px 69px;
+  margin: 0 auto;
   text-align: center;
   z-index: 10;
 }
@@ -219,4 +219,10 @@ a {
   font-size: 24px;
   color: #cecece;
   margin-bottom: 20px;
+}
+
+.header-bottom {
+  position: relative;
+  padding-bottom: 40px;
+  height: 339px;
 }
