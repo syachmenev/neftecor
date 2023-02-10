@@ -43,6 +43,18 @@ a {
   margin: 0 auto;
 }
 
+.btn {
+  background: #dba833;
+  border-radius: 5px;
+  padding: 15px 60px 15px 60px;
+  align-self: center;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
 .header {
   background-image: url(../images/bg.jpg);
   background-position: center center;
@@ -151,15 +163,58 @@ a {
   margin: 0 auto;
   width: 1143px;
   height: 864px;
+  padding-top: 17px;
+  top: -132px;
+  left: 41px;
 }
 
 .scheme::before {
   content: "";
   position: absolute;
+  opacity: 0.3;
+  filter: drop-shadow(0px 0px 50px #ffffff);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.3;
-  filter: drop-shadow(0px 0px 50px #ffffff);
+  width: 1143px;
+  height: 864px;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1144px;
+  padding: 193px 69px 63px 69px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  background: #000000;
+  filter: blur(150px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.about h1 {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+.about span {
+  color: #dba833;
+}
+
+.about p {
+  font-size: 24px;
+  color: #cecece;
+  margin-bottom: 20px;
 }
